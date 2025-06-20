@@ -1,9 +1,11 @@
 from django.http import HttpResponse, JsonResponse
+from django.shortcuts import render
 # from .models import Task
 
 def task_view(request):
     # task = Task.objects.first()
     return JsonResponse({'task 1': 'Hello'}) 
+    # return render(request, 'task.html')
 # home  view
 def home_view(request):
     return HttpResponse("Hello And Welcome To Task Mangement App")
