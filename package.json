@@ -1,0 +1,41 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3"
+  },
+  "name": "django_sdp_phitron_milestone_01",
+  "version": "1.0.0",
+  "description": "Module-4: Django Templates & Static Files",
+  "main": "index.js",
+  "dependencies": {
+    "browserslist": "^4.25.0",
+    "caniuse-lite": "^1.0.30001724",
+    "electron-to-chromium": "^1.5.171",
+    "escalade": "^3.2.0",
+    "fraction.js": "^4.3.7",
+    "nanoid": "^3.3.11",
+    "node-releases": "^2.0.19",
+    "normalize-range": "^0.1.2",
+    "picocolors": "^1.1.1",
+    "postcss-value-parser": "^4.2.0",
+    "source-map-js": "^1.2.1",
+    "update-browserslist-db": "^1.1.3"
+  },
+  "scripts": {
+    "build:tailwind": "npx tailwindcss -i ./static/css/tailwind.css -o ./static/css/output.css --minify",
+    "watch:tailwind": "npx tailwindcss -i ./static/css/tailwind.css -o ./static/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coder-black-mamba/django_sdp_phitron_milestone_01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/coder-black-mamba/django_sdp_phitron_milestone_01/issues"
+  },
+  "homepage": "https://github.com/coder-black-mamba/django_sdp_phitron_milestone_01#readme"
+}
