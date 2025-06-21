@@ -12,3 +12,9 @@ def home_view(request):
 # contact view
 def contact_view(request):
     return HttpResponse("Contact Us At abusayed@absyd.xyz")
+
+def manager_dashboard_view(request):
+    return render(request, 'dashboard/manager-dashboard.html')
+
+def user_dashboard_view(request):
+    return render(request, 'dashboard/user-dashboard.html')

@@ -1,0 +1,171 @@
+
+{% extends "dashboard/dashboard.html" %}
+{% block title %}Manager Dashboard{% endblock title %}
+{% block tasks %}
+
+<!-- details section starts  -->
+<section>
+  <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
+          <!-- single details card starts -->
+          <div class="single-card bg-white p-5 rounded shadow-b-sm">
+              <h3 class="text-xl font-semibold">Today's Tasks</h3>
+              <div class="mt-5">
+                  <div class="flex items-center gap-2 mb-2">
+                      <div class="h-2 w-2 bg-green-600 rounded-full"></div>
+                      <p class="text-sm text-gray-500 font-medium capitalize">Complete Project Proposal</p>
+                      <p class="text-xs text-gray-400 ms-auto">High</p>
+                  </div>
+                  <div class="flex items-center gap-2 mb-2">
+                      <div class="h-2 w-2 bg-yellow-600 rounded-full"></div>
+                      <p class="text-sm text-gray-500 font-medium capitalize">Review Team Upadates</p>
+                      <p class="text-xs text-gray-400 ms-auto">Normal</p>
+                  </div>
+                  <div class="flex items-center gap-2 mb-2">
+                      <div class="h-2 w-2 bg-blue-600 rounded-full"></div>
+                      <p class="text-sm text-gray-500 font-medium capitalize">Prepare for client meeting</p>
+                      <p class="text-xs text-gray-400 ms-auto">Low</p>
+                  </div>
+              </div>
+          </div>
+          <!-- single details card ends -->
+           <!-- single details card starts -->
+          <div class="single-card bg-white p-5 rounded shadow-b-sm">
+              <h3 class="text-xl font-semibold">All Tasks</h3>
+              <div class="mt-5">
+                  <!-- <div class="flex items-center gap-2 mb-2">
+                      <div class="h-2 w-2 bg-green-600 rounded-full"></div>
+                      <p class="text-sm text-gray-500 font-medium capitalize">Complete Project Proposal</p>
+                  </div> -->
+                  <div class="grid grid-cols-4 mb-5">
+                      <div>
+                          <p class="text-md font-semibold text-gray-500 uppercase">TASK TITLE</p>
+                      </div>
+                      <div>
+                          <p class="text-md font-semibold text-gray-500 uppercase">Priority</p>
+                          
+                          
+                      </div>
+                      <div>
+                          <p class="text-md font-semibold text-gray-500 uppercase">Team</p>
+                      </div>
+                      <div>
+                          <p class="text-md font-semibold text-gray-500 uppercase">Created At</p>
+                      </div>
+                  </div>
+                  <div class="record-container">
+                      <!-- single record starts -->
+                      <div class="grid grid-cols-4 single-record">
+                          <div>
+                              <div class="flex items-center gap-2 mb-4">
+                                  <div class="h-2 w-2 bg-green-600 rounded-full"></div>
+                                  <p class="text-sm text-gray-500 font-medium capitalize">Test Low Task</p>
+                              </div>
+                          </div>
+                          <div>
+                              <span class=" single-chip text-sm font-semibold text-blue-700 bg-blue-100  px-3 rounded ">
+                                  Low
+                              </span>
+                          </div>
+                          <div class="flex">
+                              <button class="text-white font-semibold text-sm bg-blue-500 rounded-full w-8 h-8 flex items-center justify-center -ms-2 border border-white">S</button>
+                              <button class="text-white font-semibold text-sm bg-green-500 rounded-full w-8 h-8 flex items-center justify-center -ms-2 border border-white">MK</button>
+                              <button class="text-white font-semibold text-sm bg-yellow-500 rounded-full w-8 h-8 flex items-center justify-center -ms-2 border border-white">L</button>
+                          </div>
+                          <div>
+                              <p class="text-sm text-gray-400">9 Months Ago</p>
+                          </div>
+                      </div>
+                      <!-- single record ends -->
+                       <!-- single record starts -->
+                      <div class="grid grid-cols-4 single-record">
+                          <div>
+                              <div class="flex items-center gap-2 mb-4">
+                                  <div class="h-2 w-2 bg-yellow-600 rounded-full"></div>
+                                  <p class="text-sm text-gray-500 font-medium capitalize">Test Low Task</p>
+                              </div>
+                          </div>
+                          <div>
+                              <span class=" single-chip text-sm font-semibold text-gray-700 bg-gray-100  px-3 rounded ">
+                                  Normal
+                              </span>
+                          </div>
+                          <div class="flex">
+                              <button class="text-white font-semibold text-sm bg-blue-500 rounded-full w-8 h-8 flex items-center justify-center -ms-2 border border-white">S</button>
+                              <button class="text-white font-semibold text-sm bg-green-500 rounded-full w-8 h-8 flex items-center justify-center -ms-2 border border-white">MK</button>
+                              <button class="text-white font-semibold text-sm bg-yellow-500 rounded-full w-8 h-8 flex items-center justify-center -ms-2 border border-white">L</button>
+                          </div>
+                          <div>
+                              <p class="text-sm text-gray-400">9 Months Ago</p>
+                          </div>
+                      </div>
+                      <!-- single record ends -->
+                       <!-- single record starts -->
+                      <div class="grid grid-cols-4 single-record">
+                          <div>
+                              <div class="flex items-center gap-2 mb-4">
+                                  <div class="h-2 w-2 bg-red-600 rounded-full"></div>
+                                  <p class="text-sm text-gray-500 font-medium capitalize">Test Low Task</p>
+                              </div>
+                          </div>
+                          <div>
+                              <span class=" single-chip text-sm font-semibold text-red-700 bg-red-100  px-3 rounded ">
+                                  High
+                              </span>
+                          </div>
+                          <div class="flex">
+                              <button class="text-white font-semibold text-sm bg-blue-500 rounded-full w-8 h-8 flex items-center justify-center -ms-2 border border-white">S</button>
+                              <button class="text-white font-semibold text-sm bg-green-500 rounded-full w-8 h-8 flex items-center justify-center -ms-2 border border-white">MK</button>
+                              <button class="text-white font-semibold text-sm bg-yellow-500 rounded-full w-8 h-8 flex items-center justify-center -ms-2 border border-white">L</button>
+                              <button class="text-white font-semibold text-sm bg-red-500 rounded-full w-8 h-8 flex items-center justify-center -ms-2 border border-white">H</button>
+                          </div>
+                          <div>
+                              <p class="text-sm text-gray-400">9 Months Ago</p>
+                          </div>
+                      </div>
+                      <!-- single record ends -->
+                  </div>
+                  
+
+
+                  <!-- <div class="mt-4">
+                      
+                      <div class="flex items-center gap-2 mb-4">
+                          <div class="h-2 w-2 bg-yellow-600 rounded-full"></div>
+                          <p class="text-sm text-gray-500 font-medium capitalize">Test Task 1</p>
+                      </div>
+                      <div class="flex items-center gap-2 mb-4">
+                          <div class="h-2 w-2 bg-blue-600 rounded-full"></div>
+                          <p class="text-sm text-gray-500 font-medium capitalize">Test Task 2</p>
+                      </div>
+                  </div> -->
+
+                  <!-- <div class="mt-4 ">
+                      <div class="single-chip mb-2">
+                          
+                      </div>
+                      <div class="single-chip mb-2">
+                          <span class=" single-chip text-sm font-semibold text-blue-700 bg-blue-100  px-3 rounded ">
+                              Low
+                          </span>
+                      </div>
+                      <div class="single-chip mb-2">
+                          <span class=" single-chip text-sm font-semibold text-blue-700 bg-blue-100 px-3 rounded ">
+                              Low
+                          </span>
+                      </div>
+                  </div> -->
+              </div>
+          </div>
+          <!-- single details card ends -->
+      </div>
+  </div>
+</section>
+<!-- details section ends  -->
+{% endblock tasks %}
+
+
+
+
+
+

@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <style>
+      body {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 md:px-0 px-3">
+      <!-- Navbar Starts  -->
+      <nav class="mb-5">
+          <div class="container mx-auto">
+              <div class="flex justify-between items-center py-2 my-3  shadow-b-sm rounded">
+                  <div>
+                      <h3 class="text-2xl font-semibold">Dashboard</h3>
+                  </div>
+                  <div class="flex items-center gap-3">
+                      <button class="text-gray-500 h-8 w-8 flex items-center justify-center cursor-pointer rounded-full hover:bg-gray-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-2">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                          </svg>
+                      </button>
+                      <button class="text-white font-semibold text-sm bg-blue-500 rounded-full w-8 h-8 flex items-center justify-center">S</button>
+                  </div>
+              </div>
+          </div>
+      </nav>
+      <!-- Navbar Ends  -->
+       <!-- Status Section Starts -->
+       <section>
+          <div class="container mx-auto mb-5 ">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                  <!-- single status card starts -->
+                  <div class="single-card bg-white p-4 rounded shadow-b-sm">
+                      <div class="mb-3">
+                          <h4 class="text-sm text-gray-500 uppercase">Total Task</h4>
+                      </div>
+                      <div class="flex items-center justify-between">
+                          <div class="left-prtion ">
+                              <h2 class="text-3xl text-gray-800 font-bold mb-2">3</h2>
+                              <p class="text-xs text-gray-400">11 Last Month</p>
+                          </div>
+                          <div class="right-prtion">
+                              <div class="h-10 w-10 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 0 1-.75.75H9a.75.75 0 0 1-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184" />
+                                  </svg>                              
+                              </div>                              
+                          </div>
+                      </div>  
+                  </div>
+                  <!-- single status card ends -->
+                   <!-- single status card starts -->
+                  <div class="single-card bg-white p-4 rounded shadow-b-sm">
+                      <div class="mb-3">
+                          <h4 class="text-sm text-gray-500 uppercase">Completed Task</h4>
+                      </div>
+                      <div class="flex items-center justify-between">
+                          <div class="left-prtion ">
+                              <h2 class="text-3xl text-gray-800 font-bold mb-2">1</h2>
+                              <p class="text-xs text-gray-400">11 Last Month</p>
+                          </div>
+                          <div class="right-prtion">
+                              <div class="h-10 w-10 bg-green-100 text-green-700 rounded-full flex items-center justify-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9">
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>                                                               
+                              </div>                              
+                          </div>
+                      </div>  
+                  </div>
+                  <!-- single status card ends -->
+                   <!-- single status card starts -->
+                  <div class="single-card bg-white p-4 rounded shadow-b-sm">
+                      <div class="mb-3">
+                          <h4 class="text-sm text-gray-500 uppercase">Task In Progress</h4>
+                      </div>
+                      <div class="flex items-center justify-between">
+                          <div class="left-prtion ">
+                              <h2 class="text-3xl text-gray-800 font-bold mb-2">1</h2>
+                              <p class="text-xs text-gray-400">11 Last Month</p>
+                          </div>
+                          <div class="right-prtion">
+                              <div class="h-10 w-10 bg-yellow-100 text-yellow-700 rounded-full flex items-center justify-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                                                 
+                              </div>                              
+                          </div>
+                      </div>  
+                  </div>
+                  <!-- single status card ends -->
+                   <!-- single status card starts -->
+                  <div class="single-card bg-white p-4 rounded shadow-b-sm">
+                      <div class="mb-3">
+                          <h4 class="text-sm text-gray-500 uppercase">Todos</h4>
+                      </div>
+                      <div class="flex items-center justify-between">
+                          <div class="left-prtion ">
+                              <h2 class="text-3xl text-gray-800 font-bold mb-2">1</h2>
+                              <p class="text-xs text-gray-400">11 Last Month</p>
+                          </div>
+                          <div class="right-prtion">
+                              <div class="h-10 w-10 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                    </svg>                                                                                                                                
+                              </div>                              
+                          </div>
+                      </div>  
+                  </div>
+                  <!-- single status card ends -->
+                   
+              </div>
+          </div>
+       </section>
+       <!-- Status Section Ends -->
+    
+        {% block tasks %}
+        
+        {% endblock tasks %}
+        
+  </body>
+</html>
